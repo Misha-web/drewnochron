@@ -1,0 +1,31 @@
+@font-face {
+	font-family: 'Circe Regular';
+	src: local('Circe Regular'), local('Circe Regular'),
+	url('../fonts/Circe-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Circe Bold';
+	src: local('Circe Bold'), local('Circe-Bold'),
+	url('../fonts/Circe-Bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Circe Extra Bold';
+	src: local('Circe ExtraBold'), local('Circe-ExtraBold'),
+	url('../fonts/Circe-ExtraBold.woff') format('woff'),
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Futura PT Book';
+	src: local('Futura PT Book'), local('FuturaPT-Book'),
+	url('../fonts/FuturaPT-Book.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
