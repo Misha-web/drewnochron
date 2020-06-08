@@ -1,0 +1,12 @@
+.products {
+	padding: 260px 0px 120px;
+	&__wrapper {
+		position: relative;
+	}
+}
+
+@media(max-width: $md2) {
+	.products {
+		padding: 130px 0px 120px;
+	}
+}

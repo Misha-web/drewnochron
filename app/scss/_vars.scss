@@ -1,9 +1,9 @@
 // Media screen
 $maxwidth: 1300px;
-$md1: 1200px;
-$md2: 991px;
-$md3: 768px;
-$md4: 480px;
+$md1: 1199.98px;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 575.98px;
 $minwidth: 359px;
 
 
@@ -17,8 +17,8 @@ $color_alpha: $x_color_darkGray;
 $x_color_blue: #4a739e;
 $color_beta: $x_color_blue;
 
-// $x_color_: ;
-// $color_gamma: ;
+$x_color_pink: #c66d74;
+$color_gamma: $x_color_pink;
 
 // $x_color_: ;
 // $color_delta: ;
@@ -45,6 +45,10 @@ $secondary_size: 14px;
 $size_big: 48px;
 $size_alpha: 36px;
 $size_beta: 25px;
+$size_gamma: 24px;
+$size_delta: 15px;
+$size_epsilon: 18px;
+
 
 
 //Font-weight

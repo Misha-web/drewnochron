@@ -2,30 +2,50 @@
 	font-family: 'Circe Regular';
 	src: local('Circe Regular'), local('Circe Regular'),
 	url('../fonts/Circe-Regular.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Circe Bold';
 	src: local('Circe Bold'), local('Circe-Bold'),
 	url('../fonts/Circe-Bold.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Circe Extra Bold';
 	src: local('Circe ExtraBold'), local('Circe-ExtraBold'),
 	url('../fonts/Circe-ExtraBold.woff') format('woff'),
-	font-weight: normal;
-	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Futura PT Book';
 	src: local('Futura PT Book'), local('FuturaPT-Book'),
 	url('../fonts/FuturaPT-Book.woff') format('woff');
+}
+
+
+//ICON
+@font-face {
+	font-family: 'icomoon';
+	src: url('../fonts/icomoon.woff?ephixx') format('woff');
 	font-weight: normal;
 	font-style: normal;
+	font-display: block;
 }
+
+
+.icon-phone:before {
+	content: "\f095";
+}
+
+.icon-envelope:before {
+	content: "\f0e0";
+}
+.icon-vk:before {
+	content: "\f09a";
+}
+
+.icon-vk:before {
+  content: "\f189";
+}
+
+

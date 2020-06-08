@@ -1,19 +1,23 @@
 @import "vars";
 @import "libs";
 @import "fonts";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/products";
+@import "blocks/slider";
 
 body {
     font-family: $primary_font;
     font-size: $primary_size;
     color: $primary_color;
     font-weight: $primary_weight;
+    overflow-x: hidden; 
 }
 
 *,
 *:before,
 *:after  {
     box-sizing: border-box;
-    outline: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -22,8 +26,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-ul, ol {
+ul, ol, li {
     padding: 0;
+    margin: 0;
+}
+
+p {
     margin: 0;
 }
 
@@ -39,5 +47,131 @@ button {
     width: 100%;
     padding: 0px 15px;
     margin: 0 auto;
+}
+
+
+.logo {
+    display: block;
+}
+
+.title {
+    margin-bottom: 110px;
+    padding-bottom: 35px;
+    position: relative;
+    text-align: center;
+    font-size: $size_alpha;
+    font-weight: $secondary_weight;
+    line-height: 48px;
+    text-transform: uppercase;
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 8px;
+        display: block;
+        background-image: url(../img/title-wave.png);
+        background-repeat: no-repeat;
+    }
+}
+
+.btn {
+    position: relative;
+    padding: 22px 74px 20px 36px;
+    border-radius: 32px;
+    color: $primary_color;
+    font-size: $size_delta;
+    line-height: 73px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: $secondary_color;
+    &:after {
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        transform: translateY(-50%);
+        content: '';
+        background-image: url(../img/arrow.png);
+        background-repeat: no-repeat;
+        width: 18px;
+        height: 13px;
+    }
+}
+@media(max-width: $md3) {
+    .btn {
+        padding: 20px 60px 20px 25px;
+        font-size: 13px;
+        line-height: 50px;
+        &:after {
+            right: 10px;
+        }
+    }
+}
+@media(max-width: $md4) {
+    .btn {
+        padding: 15px 40px 15px 20px;
+        font-size: 12px;
+        line-height: 30px;
+    }
+}
+
+.burger-menu {
+    display: none;
+    position: relative;
+    z-index: 11;
+    width: 30px;
+    height: 20px;
+    background-color: transparent;
+    &.active {
+        &:after {
+            transition: .2s linear;
+            top: 5px;
+            transform: rotate(45deg);
+            background-color: #fff;
+        }
+        &:before {
+            transition: .2s linear;
+            top: 5px;
+            transform: rotate(-45deg);
+            background-color: #fff;
+        }
+        span {
+            display: none;
+        }
+    }
+    span {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        right: 0;
+        background-color: #000;
+    }
+    &:after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #000;
+    }
+    &:before {
+        content: '';
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: #000;
+    }
+}
+
+@media(max-width: $md2) {
+    .burger-menu {
+        display: block;
+    }
 }
 
