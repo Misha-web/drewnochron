@@ -37,6 +37,28 @@ $(document).ready(function() {
 		]
 	});
 
+	$('.blog__slider').slick({
+		dots: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		infinite: true,
+		responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+		{
+			breakpoint: 840,
+			settings: {
+				arrows: false,
+				slidesToShow: 1,
+			}
+		}
+		]
+	});
+
 	// Fixed header
 	let headerH = $("#header__actions").innerHeight();
 	let headerMenu = $("#header__menu");

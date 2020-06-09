@@ -10,21 +10,25 @@
 		margin-bottom: 45px;
 	}
 	&__header-title {
-		position: relative;
 		margin-bottom: 20px;
 		font-size: $size_alpha;
 		font-weight: $secondary_weight;
 		line-height: 55px;
 		text-transform: uppercase;
-		&:after {
-			content: '';
-			background-image: url(../img/about-wave.png);
-			background-repeat: no-repeat;
-			display: block;
-			width: 100%;
-			position: absolute;
-			top: 14px;
-			right: 0;
+		span {
+			position: relative;
+			display: inline-block;
+			&:after {
+				content: '';
+				background-image: url(../img/about-wave.png);
+				background-repeat: no-repeat;
+				display: block;
+				width: 50px;
+				height: 8px;
+				position: absolute;
+				top: 40px;
+				right: 20px;
+			}
 		}
 	}
 	&__header-text {

@@ -36,7 +36,7 @@
 	overflow: hidden;
 }
 
-.slider .slick-arrow {
+.slick-arrow {
 	position: absolute;
 	top: 30%;
 	z-index: 3;
@@ -52,7 +52,7 @@
 	}
 }
 
-.slider .slick-prev {
+.slick-prev {
 	left: 0;
 	padding: 50px 40px 50px 50px;
 	transform: translateX(-45px);
@@ -68,7 +68,7 @@
 	}
 }
 
-.slider .slick-next {
+.slick-next {
 	right: 0;
 	padding: 50px 50px 50px 40px;
 	transform: translateX(45px);
@@ -83,13 +83,13 @@
 	}
 }
 
-.slider .slick-dots {
+.slick-dots {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.slider .slick-dots li {
+.slick-dots li {
 	list-style: none;
 	margin: 60px 15px 0px;
 	&.slick-active button {
@@ -97,7 +97,7 @@
 	}
 }
 
-.slider .slick-dots button {
+.slick-dots button {
 	font-size: 0;
 	width: 12px;
 	height: 12px;
@@ -106,7 +106,7 @@
 }
 
 @media(max-width: $maxwidth) {
-	.slider .slick-prev {
+	.slick-prev {
 		padding: 40px 20px 40px 50px;
 		transform: translateX(-45px);
 		overflow: hidden;
@@ -121,7 +121,7 @@
 		}
 	}
 
-	.slider .slick-next {
+	.slick-next {
 		right: 0;
 		padding: 40px 50px 40px 20px;
 		transform: translateX(45px);
@@ -151,7 +151,7 @@
 			text-align: center;
 		}
 	}
-	.slider .slick-dots li {
+	.slick-dots li {
 		margin: 20px 15px 0px;
 	}
 }
