@@ -2,7 +2,6 @@
 	position: relative;
 	background-image: url(../img/header-bg.jpg);
 	background-repeat: no-repeat;
-	background-position: 50% 50%;
 	background-size: cover;
 	height: 100%;
 	&__actions {
@@ -219,6 +218,9 @@
 		}
 		&__advantages {
 			transform: translateY(0);
+			.container {
+				padding: 0;
+			}
 		}
 	}
 }

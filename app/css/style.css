@@ -3552,7 +3552,6 @@ html {
   position: relative;
   background-image: url(../img/header-bg.jpg);
   background-repeat: no-repeat;
-  background-position: 50% 50%;
   background-size: cover;
   height: 100%;
 }
@@ -3779,6 +3778,9 @@ html {
   .header__advantages {
     transform: translateY(0);
   }
+  .header__advantages .container {
+    padding: 0;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -3940,6 +3942,7 @@ html {
 .slider__item-img {
   display: block;
   max-width: 100%;
+  margin: 0 auto;
 }
 
 .slider__item-content {
@@ -4082,8 +4085,105 @@ html {
   .slider__item {
     text-align: center;
   }
-  .slider__item-img {
-    margin: 0 auto;
+  .slider .slick-dots li {
+    margin: 20px 15px 0px;
+  }
+}
+
+.about {
+  padding: 120px 0px 100px;
+  background-image: url(../img/about-bg.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #4a739e;
+  color: #fff;
+}
+
+.about__header {
+  margin-bottom: 45px;
+}
+
+.about__header-title {
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 55px;
+  text-transform: uppercase;
+}
+
+.about__header-title:after {
+  content: '';
+  background-image: url(../img/about-wave.png);
+  background-repeat: no-repeat;
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 14px;
+  right: 0;
+}
+
+.about__header-text {
+  margin-bottom: 20px;
+  font-family: "Circe Regular", sans-serif;
+  font-size: 19px;
+  line-height: 40px;
+}
+
+.about__body {
+  margin-bottom: 55px;
+  font-size: 25px;
+  line-height: 40px;
+}
+
+.about__body-description {
+  margin-bottom: 20px;
+  font-family: "Circe Regular", sans-serif;
+}
+
+.about__body-text {
+  margin-bottom: 20px;
+  font-family: "Circe Bold", sans-serif;
+  font-weight: 700;
+}
+
+.about__footer-text {
+  font-family: "Circe Regular", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+@media (max-width: 1199.98px) {
+  .about__footer-text {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .about {
+    padding: 80px 0px 60px;
+  }
+  .about__header {
+    margin-bottom: 20px;
+  }
+  .about__header-title {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .about__header-text {
+    font-size: 17px;
+    line-height: 30px;
+  }
+  .about__body {
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .about__footer-text {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
@@ -4163,7 +4263,7 @@ button {
   border-radius: 32px;
   color: #272828;
   font-size: 15px;
-  line-height: 73px;
+  line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
   background-color: #fff;

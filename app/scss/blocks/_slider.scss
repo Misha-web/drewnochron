@@ -8,6 +8,7 @@
 	&__item-img {
 		display: block;
 		max-width: 100%;
+		margin: 0 auto;
 	}
 	&__item-content {
 		padding: 30px 70px 25px 30px;
@@ -149,8 +150,8 @@
 		&__item {
 			text-align: center;
 		}
-		&__item-img {
-			margin: 0 auto;
-		}
+	}
+	.slider .slick-dots li {
+		margin: 20px 15px 0px;
 	}
 }
