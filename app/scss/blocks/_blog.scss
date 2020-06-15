@@ -1,7 +1,5 @@
 .blog {
 	padding: 120px 0px 100px;
-	&__slider {}
-	&__slider-item {}
 	&__item {
 		outline: none;
 	}
@@ -13,11 +11,6 @@
 	&__wrapper {
 		padding-top: 35px;
 		display: flex;
-	}
-	&__item-content {
-		
-	}
-	&__content {
 	}
 	&__header-date {
 		flex: 0 0 70px;
@@ -54,5 +47,11 @@
 			right: 0;
 			transform: translateY(-50%);
 		}
+	}
+}
+
+@media(max-width: $md3) {
+	.blog {
+		padding: 90px 0px 60px;
 	}
 }

@@ -3932,6 +3932,12 @@ html {
   }
 }
 
+@media (max-width: 767.98px) {
+  .products {
+    padding: 90px 0px 80px;
+  }
+}
+
 .slider__item {
   outline: none;
   background-color: #fff;
@@ -4252,6 +4258,203 @@ html {
   transform: translateY(-50%);
 }
 
+@media (max-width: 767.98px) {
+  .blog {
+    padding: 90px 0px 60px;
+  }
+}
+
+.footer__header {
+  background-color: #f5f7f9;
+}
+
+.footer__header-actions {
+  padding: 60px 65px 60px 50px;
+  flex: 0 0 40%;
+  background: #f5f7f9;
+}
+
+.footer__actions-logo {
+  margin-bottom: 50px;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer__logo-icon {
+  display: block;
+  max-width: 100%;
+}
+
+.footer__logo-text {
+  margin-left: 25px;
+  font-family: "Circe Regular", sans-serif;
+  line-height: 24px;
+}
+
+.footer__actions-phone {
+  display: inline-block;
+  padding-left: 25px;
+  margin-bottom: 60px;
+  position: relative;
+  font-family: "Circe Bold", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #4a739e;
+}
+
+.footer__actions-phone:after {
+  content: '';
+  display: block;
+  background-image: url(../img/phone.svg);
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footer__social-link {
+  margin-right: 10px;
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #c2cfde;
+  transition: .2s linear;
+}
+
+.footer__social-link:hover {
+  background-color: #4a739e;
+}
+
+.footer__social-link:after {
+  font-family: 'icomoon';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.footer__social-link--fb:after {
+  content: '\f09a';
+}
+
+.footer__social-link--vk:after {
+  content: "\f189";
+}
+
+.footer__header-nav {
+  padding-left: 40px;
+}
+
+.footer__nav {
+  background-color: #ebf0f3;
+  flex: 0 0 60%;
+}
+
+.footer__nav-line {
+  display: block;
+  margin: 0 30px;
+  width: 1px;
+  background-color: #c8d2dc;
+}
+
+.footer__nav-wrapper {
+  padding: 70px 30px;
+}
+
+.footer__nav-wrapper:nth-child(2) {
+  margin-top: 25px;
+}
+
+.footer__nav-menu {
+  padding-top: 40px;
+}
+
+.footer__menu li {
+  list-style: none;
+}
+
+.footer__menu-title {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.footer__menu-title:after {
+  content: '';
+  display: block;
+  background-image: url(../img/footer-wave.png);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  right: -35px;
+  transform: translateY(-50%);
+}
+
+.footer__menu-link {
+  text-decoration: none;
+  color: #272828;
+  font-family: "Circe Regular", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.footer__bot {
+  padding: 20px 0px 0px;
+  font-size: 14px;
+  line-height: 32px;
+}
+
+.footer__bot-copiright {
+  padding-bottom: 20px;
+  opacity: 0.75;
+  font-family: "Futura PT Book", sans-serif;
+}
+
+.footer__bot-link {
+  padding-bottom: 20px;
+  margin-right: 45px;
+  text-decoration: none;
+  color: #272828;
+  font-family: "Circe Regular", sans-serif;
+}
+
+@media (max-width: 1300px) {
+  .footer__nav-line {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .footer__nav-wrapper {
+    padding: 20px 30px;
+  }
+  .footer__nav-wrapper:nth-child(2) {
+    margin-top: 0px;
+  }
+  .footer__nav-menu {
+    padding-top: 20px;
+  }
+  .footer__bot-link {
+    margin-right: 0px;
+    display: block;
+  }
+}
+
 body {
   font-family: "Circe Extra Bold", sans-serif;
   font-size: 16px;
@@ -4346,25 +4549,6 @@ button {
   height: 13px;
 }
 
-@media (max-width: 767.98px) {
-  .btn {
-    padding: 20px 60px 20px 25px;
-    font-size: 13px;
-    line-height: 50px;
-  }
-  .btn:after {
-    right: 10px;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .btn {
-    padding: 15px 40px 15px 20px;
-    font-size: 12px;
-    line-height: 30px;
-  }
-}
-
 .burger-menu {
   display: none;
   position: relative;
@@ -4424,5 +4608,30 @@ button {
 @media (max-width: 991.98px) {
   .burger-menu {
     display: block;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .btn {
+    padding: 20px 60px 20px 25px;
+    font-size: 13px;
+    line-height: 50px;
+  }
+  .btn:after {
+    right: 10px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .btn {
+    padding: 15px 40px 15px 20px;
+    font-size: 12px;
+    line-height: 30px;
+  }
+  .title {
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-size: 28px;
+    line-height: 40px;
   }
 }

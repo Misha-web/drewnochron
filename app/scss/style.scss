@@ -7,13 +7,14 @@
 @import "blocks/slider";
 @import "blocks/about";
 @import "blocks/blog";
+@import "blocks/footer";
 
 body {
     font-family: $primary_font;
     font-size: $primary_size;
     color: $primary_color;
     font-weight: $primary_weight;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 *,
@@ -101,23 +102,6 @@ button {
         height: 13px;
     }
 }
-@media(max-width: $md3) {
-    .btn {
-        padding: 20px 60px 20px 25px;
-        font-size: 13px;
-        line-height: 50px;
-        &:after {
-            right: 10px;
-        }
-    }
-}
-@media(max-width: $md4) {
-    .btn {
-        padding: 15px 40px 15px 20px;
-        font-size: 12px;
-        line-height: 30px;
-    }
-}
 
 .burger-menu {
     display: none;
@@ -174,6 +158,31 @@ button {
 @media(max-width: $md2) {
     .burger-menu {
         display: block;
+    }
+}
+
+@media(max-width: $md3) {
+    .btn {
+        padding: 20px 60px 20px 25px;
+        font-size: 13px;
+        line-height: 50px;
+        &:after {
+            right: 10px;
+        }
+    }
+}
+@media(max-width: $md4) {
+    .btn {
+        padding: 15px 40px 15px 20px;
+        font-size: 12px;
+        line-height: 30px;
+    }
+
+    .title {
+        margin-bottom: 60px;
+        padding-bottom: 20px;
+        font-size: 28px;
+        line-height: 40px;
     }
 }
 
