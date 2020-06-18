@@ -1,0 +1,43 @@
+.cooperation {
+	padding: 90px 0px;
+	font-family: $secondary_font;
+	color: #444;
+	font-size: $size_epsilon;
+	&__subtitle {
+		display: block;
+		margin-bottom: 15px;
+		font-size: 20px;
+		font-weight: $secondary_weight;
+	}
+	&__description {
+		display: block;
+		margin: 20px 0;
+		border-left: 5px solid #eee;
+		padding: 10px 20px;
+	}
+	&__actions-text {}
+	&__actions-subtext {}
+	&__actions-phone {
+		display: block;
+		color: $color_beta;
+		text-decoration: none;
+		transition: .2s linear;
+		&:hover {
+			color: #59aeff;
+		}
+		span {
+			color: #444;
+			text-transform: uppercase;
+			margin-left: 5px;
+		}
+	}
+	&__actions-email {
+		color: $color_beta;
+		text-decoration: none;
+		span {
+			display: inline-block;
+			margin-right: 5px;
+			color: #444;
+		}
+	}
+}

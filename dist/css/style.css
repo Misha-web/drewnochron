@@ -4455,55 +4455,6 @@ html {
   }
 }
 
-.cooperation {
-  padding: 90px 0px;
-  font-family: "Circe Regular", sans-serif;
-  color: #444;
-  font-size: 18px;
-}
-
-.cooperation__subtitle {
-  display: block;
-  margin-bottom: 15px;
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.cooperation__description {
-  display: block;
-  margin: 20px 0;
-  border-left: 5px solid #eee;
-  padding: 10px 20px;
-}
-
-.cooperation__actions-phone {
-  display: block;
-  color: #4a739e;
-  text-decoration: none;
-  transition: .2s linear;
-}
-
-.cooperation__actions-phone:hover {
-  color: #59aeff;
-}
-
-.cooperation__actions-phone span {
-  color: #444;
-  text-transform: uppercase;
-  margin-left: 5px;
-}
-
-.cooperation__actions-email {
-  color: #4a739e;
-  text-decoration: none;
-}
-
-.cooperation__actions-email span {
-  display: inline-block;
-  margin-right: 5px;
-  color: #444;
-}
-
 body {
   font-family: "Circe Extra Bold", sans-serif;
   font-size: 16px;
